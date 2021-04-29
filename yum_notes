@@ -1,0 +1,1 @@
+Yellowdog Updater Modifier sums as YUM and this is a PMT (Package Management Tool) for the RedHat Package Manager. YUM has been used for quite a long time. But, now in RHEL 8, we have a modest version of “yum” called “dnf” stands for Dandified YUM. Although both the commands work fine in Redhat 8 Linux but dnf is much faster, as some of the bugs have been removed.
