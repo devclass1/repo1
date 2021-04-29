@@ -1,1 +1,24 @@
 Yellowdog Updater Modifier sums as YUM and this is a PMT (Package Management Tool) for the RedHat Package Manager. YUM has been used for quite a long time. But, now in RHEL 8, we have a modest version of “yum” called “dnf” stands for Dandified YUM. Although both the commands work fine in Redhat 8 Linux but dnf is much faster, as some of the bugs have been removed.
+
+[label]
+The label used as an identifier in the repository file.
+
+
+name=
+Specifies the name of the repository.
+
+
+mirrorlist=
+Refers to a URL where information about mirror servers for this server can be obtained. Typically used for big online repositories only.
+
+
+baseurl=
+Refers to the base URL where the RPM packages are found.
+
+
+gpgcheck=
+Set to 1 if a GNU Privacy Guard (GPG) integrity check needs to be performed on the packages. If set to 1, a GPG key is required.
+
+
+gpgkey=
+Specifies the location of the GPG key that is used to check package integrity.
