@@ -6,3 +6,13 @@ print (z)
 
 Constants
 A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be changed later.
+
+
+[cloudshell-user@ip-10-0-131-245 test]$ cat constant.py
+PI = 3.14
+GRAVITY = 980000
+[cloudshell-user@ip-10-0-131-245 test]$ cat main.py 
+import constant
+
+print(constant.PI)
+print(constant.GRAVITY)
