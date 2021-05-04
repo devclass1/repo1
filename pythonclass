@@ -1,2 +1,14 @@
-Python Variables
-A variable is a named location used to store data in the memory. It is helpful to think of variables as a container that holds data that can be changed later in the program.
+name ="Welcome To python class"
+print(name)
+#print("name")
+
+'''
+This is an 
+example
+of
+variable
+'''
+num1 = 10
+num2 = 20
+
+print("the first number is: ",num1)
