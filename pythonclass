@@ -38,3 +38,26 @@ print(x, x.imag, x.real)
 End of code
 ##########
 
+String literals
+A string literal is a sequence of characters surrounded by quotes. We can use both single, double, or triple quotes for a string. And, a character literal is a single character surrounded by single or double quotes.
+
+Boolean literals
+A Boolean literal can have any of the two values: True or False.
+
+######
+#Sample code
+#######
+
+x = (1 == True)
+y = (1 == False)
+a = True + 4
+b = False + 10
+
+print("x is", x)
+print("y is", y)
+print("a:", a)
+print("b:", b)
+
+##########
+End of code
+##########
