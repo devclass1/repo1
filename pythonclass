@@ -32,3 +32,12 @@ print("d['key'] = ", d['key'])
 # Generates error
 print("d[2] = ", d[2])
 #### Ending of code
+
+#####  Starting of Code 
+dict1={'name1': 'Amit', 'name2': 'Asit'}
+print(dict1['name2'])
+
+#### Ending of code
+
+
+
