@@ -40,4 +40,26 @@ print(dict1['name2'])
 #### Ending of code
 
 
+Return Value from update()
+update() method updates the dictionary with elements from a dictionary object or an iterable object of key/value pairs.
+
+It doesn't return any value (returns None).
+
+#####  Starting of Code
+d = {1: "one", 2: "three"}
+d1 = {2: "two"}
+
+# updates the value of key 2
+d.update(d1)
+print(d)
+
+d1 = {3: "three"}
+
+# adds element with key 3
+d.update(d1)
+print(d)
+
+#### Ending of code
+
+
 
