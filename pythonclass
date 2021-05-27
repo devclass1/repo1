@@ -4,7 +4,8 @@ f = open("img.bmp",'r+b') # read and write in binary mode
 
 
 f = open("file1.txt", "r")
-print ("Name of the file: ", f.name())
+print ("Name of the file: ", f.name)
+print ("Name of the file: ", f.mode)
 print(f.read())
 # Close opend file
 f.close()
