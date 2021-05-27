@@ -9,3 +9,12 @@ print ("Mode of the file: ", f.mode)
 print(f.read())
 # Close opend file
 f.close()
+
+
+
+str = input("Enter choice of string:  ")
+f = open("file.txt",'w',encoding = 'utf-8')
+f.write("Selecting string from user input word:\n")
+f.write(str)
+f.write("\n")
+f.close()
