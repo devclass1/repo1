@@ -3,8 +3,8 @@ f = open("test.txt",'w')  # write in text mode
 f = open("img.bmp",'r+b') # read and write in binary mode
 
 
-f = open("file1.txt", "wb")
-print ("Name of the file: ", f.name)
+f = open("file1.txt", "r")
+print ("Name of the file: ", f.name())
 print(f.read())
 # Close opend file
 f.close()
