@@ -60,3 +60,4 @@ with open("movielist.csv", 'r') as file:
         print(dict(row))
     
     
+Starting from Python 3.8, csv.DictReader() returns a dictionary for each row, and we do not need to use dict() explicitly.
