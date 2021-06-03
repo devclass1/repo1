@@ -27,3 +27,12 @@ second row data 1,second row data 2,second row data 3
 
 
 CSV files are normally created by programs that handle large amounts of data. They are a convenient way to export data from spreadsheets and databases as well as import or use it in other programs. For example, you might export the results of a data mining program to a CSV file and then import that into a spreadsheet to analyze the data, generate graphs for a presentation, or prepare a report for publication.
+
+
+
+
+import csv
+with open('profession.csv', 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
