@@ -7,3 +7,19 @@ os.system('ls -la')
 
 
 The OS module in Python provides functions for interacting with the operating system. OS comes under Python’s standard utility modules. This module provides a portable way of using operating system dependent functionality. The *os* and *os.path* modules include many functions to interact with the file system.
+
+
+# Python program to explain os.listdir() method
+     
+# importing os module
+import os
+ 
+# Get the list of all files and directories
+# in the root directory
+path = "/"
+dir_list = os.listdir(path)
+ 
+print("Files and directories in '", path, "' :")
+ 
+# print the list
+print(dir_list)
