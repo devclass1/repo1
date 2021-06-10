@@ -1,0 +1,6 @@
+The os module in python provides a portable way of using operating system dependent functionality.
+
+import os
+os.system('pwd')
+os.system('cd ~')
+os.system('ls -la')
