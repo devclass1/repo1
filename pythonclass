@@ -1,25 +1,9 @@
-The os module in python provides a portable way of using operating system dependent functionality.
 
-import os
-os.system('pwd')
-os.system('cd ~')
-os.system('ls -la')
+Google Colaboratory
+Google hosts the free Colaboratory service for running Python using a modified Jupyter notebook. The exact “look and feel” of Colab will not be the same as using a code editor like PyCharm (my favorite environment for working in Python) or even a “plain” Jupyter notebook, but the functionality is there, plus you don’t have to deal with maintaining the software and packages. 
+Google Colab gives you direct access to Google’s supercomputers — you can do some pretty serious data on here, as the endorsement from TensorFlow suggests (that is a popular package for deep learning built by developers at Google). You can even execute on your Google Drive files entirely from the cloud. 
 
 
-The OS module in Python provides functions for interacting with the operating system. OS comes under Python’s standard utility modules. This module provides a portable way of using operating system dependent functionality. The *os* and *os.path* modules include many functions to interact with the file system.
+https://colab.research.google.com/notebooks/welcome.ipynb
 
 
-# Python program to explain os.listdir() method
-     
-# importing os module
-import os
- 
-# Get the list of all files and directories
-# in the root directory
-path = "/"
-dir_list = os.listdir(path)
- 
-print("Files and directories in '", path, "' :")
- 
-# print the list
-print(dir_list)
