@@ -1,51 +1,15 @@
+import pandas as pd
 
-Matplotlib is one of the most popular Python packages used for data visualization. It is a cross-platform library for making 2D plots from data in arrays. Pyplot is a collection of command style functions that make matplotlib work like MATLAB. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc.
+df=pd.read_csv("graphdata1.csv")
+print(df.head(5))
+x=df['day of the month ']
+y=df['value']
 
-Matplotlib.pyplot.legend()
-A legend is an area describing the elements of the graph. In the matplotlib library, there’s a function called legend() which is used to Place a legend on the axes.
-
-
-
-import matplotlib.pyplot as plt
- 
-x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-#y1 = [1, 3, 5, 3, 1, 3, 5, 3, 1]
-y2 = [12, 14, 16, 14, 12, 14, 16, 14, 12]
-plt.plot(x, y1, label="Data of Y1")
-plt.plot(x, y2, label="Data of Y2")
+plt.plot(x, y, label="Data")
 plt.plot()
 
 plt.xlabel("x axis")
 plt.ylabel("y axis")
 plt.title("Line Graph Example")
 plt.legend()
-plt.show()
-
-
-
-from google.colab import files
-uploaded = files.upload()
-
-# To store dataset in a Pandas Dataframe
-import io
-df2 = pd.read_csv(io.BytesIO(uploaded['Filename.csv']))
-
-
-
-
-import pandas as pd
-
-df = pd.DataFrame({
-    'name':['john','mary','peter','jeff','bill','lisa','jose'],
-    'age':[23,78,22,19,45,33,20],
-    'gender':['M','F','M','M','M','F','M'],
-    'state':['california','dc','california','dc','california','texas','texas'],
-    'num_children':[2,0,0,3,2,1,4],
-    'num_pets':[5,1,0,5,2,2,3]
-})
-ax = plt.gca()
-
-df.plot(kind='line',x='name',y='num_children',ax=ax)
-df.plot(kind='line',x='name',y='num_pets', color='red', ax=ax)
-
 plt.show()
