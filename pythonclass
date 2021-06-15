@@ -20,3 +20,12 @@ plt.ylabel("y axis")
 plt.title("Line Graph Example")
 plt.legend()
 plt.show()
+
+
+
+from google.colab import files
+uploaded = files.upload()
+
+# To store dataset in a Pandas Dataframe
+import io
+df2 = pd.read_csv(io.BytesIO(uploaded['Filename.csv']))
