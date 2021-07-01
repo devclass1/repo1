@@ -1,34 +1,29 @@
-What is Big Data?
-Big data refers to massive complex structured and unstructured data sets that are rapidly generated and transmitted from a wide variety of sources. 
+These attributes make up the three Vs of big data:   
 
-History of big data
-Data collection can be traced back to the use of stick tallies by ancient civilization when tracking food, but the history of big data really begins much later. Here is a brief timeline of some of notable moments that have led us to where we are today.
+Volume: The huge amounts of data being stored.
+Velocity: The lightning speed at which data streams must be processed and analyzed.
+Variety: The different sources and forms from which data is collected, such as numbers, text, video, images, audio and text.
+These days, data is constantly generated anytime we open an app, search Google or simply travel place to place with our mobile devices. The result? Massive collections of valuable information that companies and organizations need to manage, store, visualize and analyze.
 
-1881
-One of the first instances of data overload is experienced during the 1880 census. The Hollerith Tabulating Machine is invented and the work of processing census data is cut from ten years of labor to under a year.
-1928
-German-Austrian engineer Fritz Pfleumer develops magnetic data storage on tape, which led the way for how digital data would be stored in the coming century.
-1948
-Shannon’s Information Theory is developed, laying the foundation for the information infrastructure widely used today.
-1970
-Edgar F. Codd, a mathematician at IBM, presents a “relational database” displaying how information in large databases can be accessed without knowing its structure or location. This was formerly reserved for specialists or those with extensive computer knowledge.
-1976
-Commercial use of Material Requirements Planning (MRP) systems are developed to organize and schedule information, becoming more common for catalyzing business operations.
-1989
-The World Wide Web is created by Tim Berners-Lee.
-2001
-Doug Laney presents a paper describing the "3 Vs of Data," which becomes the fundamental characteristics of big data. That same year the term “software-as-a-service” is shared for the first time.  
-2005
-Hadoop, the open-source software framework for large dataset storage is created.
-2007
-The term “big data” is introduced to the masses in the Wired article "The End of Theory: The Data Deluge Makes the Scientific Method Obsolete."
-2008
-A team of computer science researches publish the paper "Big Data Computing: Creating Revolutionary Breakthroughs in Commerce, Science and Society," describing how big data is fundamentally changing the way companies and organizations do business.
-2010
-Google CEO Eric Schmidt reveals that every two days people are creating as much information as people created from the beginning of civilization until 2003.
-2014
-More and more companies begin moving their Enterprise Resource Planning Systems (ERP) to the cloud.
-Internet of Things (IoT) becomes widely used with an estimate of 3.7 billion connected devices or things in use, transmitting large amounts of data every day.
-2016
-The Obama administration releases the "Federal Big Data Research and Strategic Development Plan," designed to drive research and development of big data applications that will directly benefit society and the economy.
-2017
+Traditional data tools aren't equipped to handle this kind of complexity and volume, which has led to a slew of specialized big data software and architecture solutions designed to manage the load.
+
+Big data is essentially the wrangling of the three Vs to gain insights and make predictions, so it's useful to take a closer look at each attribute.
+
+Volume 
+Big data is enormous. While traditional data is measured in familiar sizes like megabytes, gigabytes and terabytes, big data is stored in petabytes and zettabytes. 
+
+To grasp the enormity of difference in scale, consider this comparison from the Berkeley School of Information: one gigabyte is the equivalent of a seven minute video in HD, while a single zettabyte is equal to 250 billion DVDs.
+
+This is just the tip of the iceberg. According to a report by EMC, the digital universe is doubling in size every two years and by 2020 is expected to reach 44 trillion zettabytes. 
+
+Big data provides the architecture handling this kind of data. Without the appropriate solutions for storing and processing, it would be impossible to mine for insights. 
+
+Velocity
+From the speed at which it's created to the amount of time needed to analyze it, everything about big data is fast. Some have described it as trying to drink from a fire hose. 
+
+Companies and organizations must have the capabilities to harness this data and generate insights from it in real-time, otherwise it's not very useful. Real-time processing allows decision makers to act quickly, giving them a leg up on the competition. 
+
+While some forms of data can be batched processed and remain relevant over time, much of big data is streaming into organizations at a clip and requires immediate action for the best outcomes. Sensor data from health devices is a great example. The ability to instantly process health data can provide users and physicians with potentially life-saving information.
+
+Variety
+Roughly 95% of all big data is unstructured, meaning it does not fit easily into a straightforward, traditional model. Everything from emails and videos to scientific and meteorological data can constitute a big data stream, each with their own unique attributes. 
