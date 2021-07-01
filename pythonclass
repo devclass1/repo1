@@ -1,29 +1,28 @@
-These attributes make up the three Vs of big data:   
+WHAT ARE BIG DATA PLATFORMS?
+Big data platforms are specially designed to handle unfathomable volumes of data that come into the system at high velocities and wide varieties. These big data platforms usually consist of varying servers, databases and business intelligence tools that allow data scientists to manipulate data to find trends and patterns.
 
-Volume: The huge amounts of data being stored.
-Velocity: The lightning speed at which data streams must be processed and analyzed.
-Variety: The different sources and forms from which data is collected, such as numbers, text, video, images, audio and text.
-These days, data is constantly generated anytime we open an app, search Google or simply travel place to place with our mobile devices. The result? Massive collections of valuable information that companies and organizations need to manage, store, visualize and analyze.
+How is big data used?
+The diversity of big data makes it inherently complex, resulting in the need for systems capable of processing its various structural and semantic differences. 
 
-Traditional data tools aren't equipped to handle this kind of complexity and volume, which has led to a slew of specialized big data software and architecture solutions designed to manage the load.
+Big data requires specialized NoSQL databases that can store the data in a way that doesn't require strict adherence to a particular model. This provides the flexibility needed to cohesively analyze seemingly disparate sources of information to gain a holistic view of what is happening, how to act and when to act.
 
-Big data is essentially the wrangling of the three Vs to gain insights and make predictions, so it's useful to take a closer look at each attribute.
+When aggregating, processing and analyzing big data, it is often classified as either operational or analytical data and stored accordingly.
 
-Volume 
-Big data is enormous. While traditional data is measured in familiar sizes like megabytes, gigabytes and terabytes, big data is stored in petabytes and zettabytes. 
+Operational systems serve large batches of data across multiple servers and includes such input as inventory, customer data and purchases — the day-to-day information within an organization.
 
-To grasp the enormity of difference in scale, consider this comparison from the Berkeley School of Information: one gigabyte is the equivalent of a seven minute video in HD, while a single zettabyte is equal to 250 billion DVDs.
+Analytical systems are more sophisticated than their operational counterparts, capable of handling complex data analysis and providing businesses with decision-making insights. These systems will often be integrated into existing processes and infrastructure to maximize the collection and use of data.
 
-This is just the tip of the iceberg. According to a report by EMC, the digital universe is doubling in size every two years and by 2020 is expected to reach 44 trillion zettabytes. 
+Regardless of how it is classified, data is everywhere. Our phones, credit cards, software applications, vehicles, records, websites and the majority of “things” in our world are capable of transmitting vast amounts of data, and this information is incredibly valuable.
 
-Big data provides the architecture handling this kind of data. Without the appropriate solutions for storing and processing, it would be impossible to mine for insights. 
+Big data is used in nearly every industry to identify patterns and trends, answer questions, gain insights into customers, and tackle complex problems. Companies and organizations use the information for a multitude of reasons like growing their businesses, understanding customer decisions, enhancing research, making forecasts and targeting key audiences for advertising.
 
-Velocity
-From the speed at which it's created to the amount of time needed to analyze it, everything about big data is fast. Some have described it as trying to drink from a fire hose. 
-
-Companies and organizations must have the capabilities to harness this data and generate insights from it in real-time, otherwise it's not very useful. Real-time processing allows decision makers to act quickly, giving them a leg up on the competition. 
-
-While some forms of data can be batched processed and remain relevant over time, much of big data is streaming into organizations at a clip and requires immediate action for the best outcomes. Sensor data from health devices is a great example. The ability to instantly process health data can provide users and physicians with potentially life-saving information.
-
-Variety
-Roughly 95% of all big data is unstructured, meaning it does not fit easily into a straightforward, traditional model. Everything from emails and videos to scientific and meteorological data can constitute a big data stream, each with their own unique attributes. 
+BIG DATA EXAMPLES
+Personalized e-commerce shopping experiences
+Financial market modelling
+Compiling trillions of data points to speed up cancer research
+Media recommendations from streaming services like Spotify, Hulu and Netflix
+Predicting crop yields for farmers
+Analyzing traffic patterns to lessen congestion in cities
+Data tools recognizing retail shopping habits and optimal product placement
+Big data helping sports teams maximize their efficiency and value
+Recognizing trends in education habits from individual students, schools and districts
