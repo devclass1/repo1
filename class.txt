@@ -1,3 +1,53 @@
 Step 1: Set Up an Account and Create an Administrator User
 Step 2: Set Up the AWS Command Line Interface (AWS CLI)
 Step 3: Create Your Starter Amazon Kinesis Data Analytics Application
+
+
+Step 1: Set Up an Account and Create an Administrator User
+
+To create an administrator user for yourself and add the user to an administrators user group (console)
+Sign in to the IAM console as the account owner by choosing Root user and entering your AWS account email address. On the next page, enter your password.
+
+Enable access to billing data for the IAM admin user that you will create as follows:
+
+On the navigation bar, choose your account name, and then choose My Account.
+
+Next to IAM User and Role Access to Billing Information, choose Edit. You must be signed in as the root user for this section to be displayed on the account page.
+
+Select the check box to Activate IAM Access and choose Update.
+
+On the navigation bar, choose Services and then IAM to return to the IAM dashboard.
+
+In the navigation pane, choose Users and then choose Add users.
+
+On the Details page, do the following:
+
+For User name, type Administrator.
+
+Select the check box for AWS Management Console access, select Custom password, and then type your new password in the text box.
+
+By default, AWS forces the new user to create a new password when first signing in. You can optionally clear the check box next to User must create a new password at next sign-in to allow the new user to reset their password after they sign in.
+
+Choose Next: Permissions.
+
+On the Permissions page, do the following:
+
+Choose Add user to group.
+
+Choose Create group.
+
+In the Create group dialog box, for Group name type Administrators.
+
+Select the check box for the AdministratorAccess policy.
+
+Choose Create group.
+
+Back on the page with the list of user groups, select the check box for your new user group. Choose Refresh if you don't see the new user group in the list.
+
+Choose Next: Tags.
+
+(Optional) On the Tags page, add metadata to the user by attaching tags as key-value pairs. For more information, see Tagging IAM resources.
+
+Choose Next: Review. Verify the user group memberships to be added to the new user. When you are ready to proceed, choose Create user.
+
+(Optional) On the Complete page, you can download a .csv file with login information for the user, or send email with login instructions to the user.
