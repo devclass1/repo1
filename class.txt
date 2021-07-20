@@ -1,22 +1,31 @@
-Create and Run a Kinesis Data Analytics for Apache Flink Application
+ 
+ 
+ #stock.py
+ 
+import datetime
+import json
+import random
+import boto3
 
-Create Two Amazon Kinesis Data Streams
-Write Sample Records to the Input Stream
-Download and Examine the Apache Flink Streaming Java Code
-Compile the Application Code
-Upload the Apache Flink Streaming Java Code
-Create and Run the Kinesis Data Analytics Application
-
-
-$ aws kinesis create-stream \
---stream-name ExampleInputStream \
---shard-count 1 \
---region us-east-1 \
---profile administrator
+STREAM_NAME = "ExampleInputStream"
 
 
-$ aws kinesis create-stream \
---stream-name ExampleOutputStream \
---shard-count 1 \
---region us-east-1 \
---profile administrator
+def get_data():
+    return {
+        'EVENT_TIME': datetime.datetime.now().isoformat(),
+        'TICKER': random.choice(['AAPL', 'AMZN', 'MSFT', 'INTC', 'TBV']),
+        'PRICE': round(random.random() * 100, 2)}
+
+
+def generate(stream_name, kinesis_client):
+    while True:
+        data = get_data()
+        print(data)
+        kinesis_client.put_record(
+            StreamName=stream_name,
+            Data=json.dumps(data),
+            PartitionKey="partitionkey")
+
+
+if __name__ == '__main__':
+    generate(STREAM_NAME, boto3.client('kinesis'))
