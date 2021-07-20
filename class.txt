@@ -8,3 +8,15 @@ Upload the Apache Flink Streaming Java Code
 Create and Run the Kinesis Data Analytics Application
 
 
+$ aws kinesis create-stream \
+--stream-name ExampleInputStream \
+--shard-count 1 \
+--region us-east-1 \
+--profile administrator
+
+
+$ aws kinesis create-stream \
+--stream-name ExampleOutputStream \
+--shard-count 1 \
+--region us-east-1 \
+--profile administrator
