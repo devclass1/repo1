@@ -1,31 +1,20 @@
- 
- 
- #stock.py
- 
-import datetime
-import json
-import random
-import boto3
+Download and Examine the Apache Flink Streaming Java Code
+Clone the remote repository using the following command:
+git clone https://github.com/aws-samples/amazon-kinesis-data-analytics-java-examples
 
-STREAM_NAME = "ExampleInputStream"
+Navigate to the amazon-kinesis-data-analytics-java-examples/GettingStarted directory.
 
+Note the following about the application code:
 
-def get_data():
-    return {
-        'EVENT_TIME': datetime.datetime.now().isoformat(),
-        'TICKER': random.choice(['AAPL', 'AMZN', 'MSFT', 'INTC', 'TBV']),
-        'PRICE': round(random.random() * 100, 2)}
+A Project Object Model (pom.xml) file contains information about the application's configuration and dependencies, including the Kinesis Data Analytics libraries.
 
+The BasicStreamingJob.java file contains the main method that defines the application's functionality.
 
-def generate(stream_name, kinesis_client):
-    while True:
-        data = get_data()
-        print(data)
-        kinesis_client.put_record(
-            StreamName=stream_name,
-            Data=json.dumps(data),
-            PartitionKey="partitionkey")
+The application uses a Kinesis source to read from the source stream. The following snippet creates the Kinesis source:
 
+return env.addSource(new FlinkKinesisConsumer<>(inputStreamName,
+                new SimpleStringSchema(), inputProperties));
+                
+  Your application creates source and sink connectors to access external resources using a StreamExecutionEnvironment object.
 
-if __name__ == '__main__':
-    generate(STREAM_NAME, boto3.client('kinesis'))
+The application creates source and sink connectors using static properties. To use dynamic application properties, use the createSourceFromApplicationProperties and createSinkFromApplicationProperties methods to create the connectors. These methods read the application's properties to configure the connectors.
