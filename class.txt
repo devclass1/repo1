@@ -1,20 +1,4 @@
-Download and Examine the Apache Flink Streaming Java Code
-Clone the remote repository using the following command:
-git clone https://github.com/aws-samples/amazon-kinesis-data-analytics-java-examples
-
-Navigate to the amazon-kinesis-data-analytics-java-examples/GettingStarted directory.
-
-Note the following about the application code:
-
-A Project Object Model (pom.xml) file contains information about the application's configuration and dependencies, including the Kinesis Data Analytics libraries.
-
-The BasicStreamingJob.java file contains the main method that defines the application's functionality.
-
-The application uses a Kinesis source to read from the source stream. The following snippet creates the Kinesis source:
-
-return env.addSource(new FlinkKinesisConsumer<>(inputStreamName,
-                new SimpleStringSchema(), inputProperties));
-                
-  Your application creates source and sink connectors to access external resources using a StreamExecutionEnvironment object.
-
-The application creates source and sink connectors using static properties. To use dynamic application properties, use the createSourceFromApplicationProperties and createSinkFromApplicationProperties methods to create the connectors. These methods read the application's properties to configure the connectors.
+wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+yum install -y apache-maven
+mvn --version
