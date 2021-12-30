@@ -1,4 +1,4 @@
-wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
-sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
-yum install -y apache-maven
-mvn --version
+Each signal has a default action, usually one of the following:
+• Term - Cause a program to terminate (exit) at once.
+• Core - Cause a program to save a memory image (core dump), then terminate.
+• Stop - Cause a program to stop executing (suspend) and wait to continue (resume).
