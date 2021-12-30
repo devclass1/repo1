@@ -1,4 +1,0 @@
-Each signal has a default action, usually one of the following:
-• Term - Cause a program to terminate (exit) at once.
-• Core - Cause a program to save a memory image (core dump), then terminate.
-• Stop - Cause a program to stop executing (suspend) and wait to continue (resume).
