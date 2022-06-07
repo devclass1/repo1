@@ -1,0 +1,17 @@
+{
+	"name": "conditionalpipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"isSequential": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}
