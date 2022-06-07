@@ -23,7 +23,8 @@
 						"linkedServiceName": {
 							"referenceName": "linkedService1",
 							"type": "LinkedServiceReference"
-						}
+						},
+						"path": "data/log"
 					},
 					"enableLogging": true,
 					"storeSettings": {
