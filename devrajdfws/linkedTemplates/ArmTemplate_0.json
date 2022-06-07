@@ -172,7 +172,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "Log.parquet",
+						"fileName": "samplefunction.html",
 						"folderPath": "output",
 						"fileSystem": "data"
 					}
@@ -286,7 +286,8 @@
 								"linkedServiceName": {
 									"referenceName": "linkedService1",
 									"type": "LinkedServiceReference"
-								}
+								},
+								"path": "data/log"
 							},
 							"enableLogging": true,
 							"storeSettings": {
