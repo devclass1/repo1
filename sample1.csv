@@ -1,0 +1,10 @@
+Segment,Country, Product , Discount Band ,UnitsSold, ManufacturingPrice , SalePrice , GrossSales 
+Government,Canada, Carretera , None ,1618.5,$3.00 ,$20.00 ,"$32,370.00 "
+Government,Germany, Carretera , None ,1321,$3.00 ,$20.00 ,"$26,420.00 "
+Midmarket,France, Carretera , None ,2178,$3.00 ,$15.00 ,"$32,670.00 "
+Midmarket,Germany, Carretera , None ,888,$3.00 ,$15.00 ,"$13,320.00 "
+Midmarket,Mexico, Carretera , None ,2470,$3.00 ,$15.00 ,"$37,050.00 "
+Government,Germany, Carretera , None ,1513,$3.00 ,$350.00 ,"$529,550.00 "
+Midmarket,Germany, Montana , None ,921,$5.00 ,$15.00 ,"$13,815.00 "
+Channel Partners,Canada, Montana , None ,2518,$5.00 ,$12.00 ,"$30,216.00 "
+Government,France, Montana , None ,1899,$5.00 ,$20.00 ,"$37,980.00 "
